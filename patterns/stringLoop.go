@@ -1,4 +1,4 @@
-package main
+package patterns
 
 func CharCount(str string) map[string]int {
 	result := make(map[string]int)
