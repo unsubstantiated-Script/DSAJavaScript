@@ -46,4 +46,46 @@ const frequecyCounter = (arr1, arr2) => {
     return true
 }
 
-export {frequecyCounter}
+const sameFrequency = (int1, int2) => {
+    let arr1 = int1.toString()
+    let arr2 = int2.toString()
+
+    if (arr1.length !== arr2.length) {
+        return false;
+    }
+
+    let frequencyCounter1 = {}
+    let frequencyCounter2 = {}
+
+    //Laying out each of the counts of the objects.
+    //Key is the value at hand and value is the number of incidents of that value.
+    for (let i = 0; i < arr1.length; i++) {
+        frequencyCounter1[arr1[i]] = (frequencyCounter1[arr1[i]] || 0) + 1
+    }
+
+    for (let j = 0; j < arr1.length; j++) {
+        frequencyCounter2[arr2[j]] = (frequencyCounter2[arr2[j]] || 0) + 1
+    }
+
+    for (let key in frequencyCounter1) {
+        if (frequencyCounter1[key] !== frequencyCounter2[key]) return false;
+    }
+
+    return true
+}
+
+const areThereDuplicates = (...args) => {
+    let collection = {}
+
+    for (let val in args) {
+        collection[args[val]] = (collection[args[val]] || 0) + 1
+    }
+
+    for (let key in collection) {
+        if (collection[key] > 1) return true
+    }
+
+    return false
+}
+
+export {frequecyCounter, sameFrequency, areThereDuplicates}

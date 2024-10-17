@@ -26,10 +26,24 @@
 // let countArr = [1, 1, 1, 2, 3, 3, 4, 4, 5, 6]
 // console.log(countUniqueValues(countArr))
 
+// import {slidingWindow} from "./patterns/slidingWindow.js";
+//
+// let countArr = [33, 4, 55, 34, 21, 2, 92, 9]
+// console.log(slidingWindow(countArr, 4))
 
 
-import {slidingWindow} from "./patterns/slidingWindow.js";
+//
+// import {sameFrequency} from "./patterns/frequencyCounter.js";
+//
+// console.log(sameFrequency(22333, 3322))
 
-let countArr = [33, 4, 55, 34, 21, 2, 92, 9]
-console.log(slidingWindow(countArr, 4))
 
+// import {areThereDuplicates} from "./patterns/frequencyCounter.js";
+//
+// console.log(areThereDuplicates(1, 4, 5, 2, 3))
+
+
+
+// import {areThereDuplicates} from "./patterns/multiplePointers.js";
+//
+// console.log(areThereDuplicates(3, 4, 5, 2, 3))
