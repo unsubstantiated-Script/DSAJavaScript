@@ -46,6 +46,7 @@ const frequecyCounter = (arr1, arr2) => {
     return true
 }
 
+//Tries to find if two numbers have the same frequency of numbers. A numerical anagram.
 const sameFrequency = (int1, int2) => {
     let arr1 = int1.toString()
     let arr2 = int2.toString()
@@ -74,6 +75,7 @@ const sameFrequency = (int1, int2) => {
     return true
 }
 
+//Tries to find any duplicates in array.
 const areThereDuplicates = (...args) => {
     let collection = {}
 

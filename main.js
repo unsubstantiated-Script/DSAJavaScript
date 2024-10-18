@@ -47,3 +47,23 @@
 // import {areThereDuplicates} from "./patterns/multiplePointers.js";
 //
 // console.log(areThereDuplicates(3, 4, 5, 2, 3))
+
+// import {averagePair} from "./patterns/multiplePointers.js";
+//
+// console.log(averagePair([1,3,3,5,7,10,12,19],8))
+
+// import {isSubsequence} from "./patterns/multiplePointers.js";
+//
+// console.log(isSubsequence('cancelculture','canultureisbad'))
+
+// import {maxSubarraySum} from "./patterns/slidingWindow.js";
+//
+// console.log(maxSubarraySum([3,-2,7,-4,1,-1,4,-2,1],2))
+
+// import {minSubArray} from "./patterns/slidingWindow.js";
+//
+// console.log(minSubArray([3,-2,7,-4,1,-1,4,-2,1],2));
+
+import {findLongestSubstring} from "./patterns/slidingWindow.js";
+
+console.log(findLongestSubstring('thisishowwedoit'))

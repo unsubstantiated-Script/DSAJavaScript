@@ -40,6 +40,7 @@ const countUniqueValues = (arr) => {
     return "Answer is: " + (i + 1)
 }
 
+//Checks for duplicates in an array
 const areThereDuplicates = (...args) => {
     args.sort((a, b) => {
         if (a < b) return -1;
@@ -59,4 +60,32 @@ const areThereDuplicates = (...args) => {
     return false;
 }
 
-export {sumZero, countUniqueValues, areThereDuplicates}
+
+//Takes array and number, rolls through array trying to find two numbers that equal the number passed in.
+const averagePair = (arr, num) => {
+    let start = 0
+    let end = arr.length - 1;
+    while (start < end) {
+        let avg = (arr[start] + arr[end]) / 2
+        if (avg === num) return true;
+        else if (avg < num) start++
+        else end--
+    }
+    return false;
+}
+
+//Takes two strings looks to see if sequence of chars forms a subsequence in the other array. Order shouldn't change.
+const isSubsequence = (str1, str2) => {
+    let i = 0;
+    let j = 0;
+
+    if (!str1) return true;
+    while (j < str2.length) {
+        if(str2[j] === str1[i]) i++;
+        if (i === str1.length) return true;
+        j++;
+    }
+    return false;
+}
+
+export {sumZero, countUniqueValues, areThereDuplicates, averagePair, isSubsequence}
