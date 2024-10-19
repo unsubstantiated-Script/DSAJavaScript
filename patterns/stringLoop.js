@@ -12,7 +12,7 @@ const charCount = (str) => {
 
     return obj
     //if the char is a number/letter AND is a key, add one to the object
-    // if the char is a number/letter AND not in object, add it to object and set val to 1
+    // if the char is a number/letter AND not in object, add it to object and set elem to 1
     // if char is something else (garbage code) don't do anything
     // return obj at end
 }
