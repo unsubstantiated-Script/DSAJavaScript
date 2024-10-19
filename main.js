@@ -18,17 +18,17 @@
 // console.log(anagramLoop(arr3, arr4))
 
 
-// import {sumZero} from "./patterns/multiplePointers.js";
+// import {sumZero} from "./patterns/multiplemiddles.js";
 //
 // let sauceArr = [-3,-2,1,0,2,3,4]
 //
 // console.log(sumZero(sauceArr))
 
 
-// import {countUniqueValues} from "./patterns/multiplePointers.js";
+// import {countUniqueelemues} from "./patterns/multiplemiddles.js";
 //
 // let countArr = [1, 1, 1, 2, 3, 3, 4, 4, 5, 6]
-// console.log(countUniqueValues(countArr))
+// console.log(countUniqueelemues(countArr))
 
 // import {slidingWindow} from "./patterns/slidingWindow.js";
 //
@@ -47,15 +47,15 @@
 // console.log(areThereDuplicates(1, 4, 5, 2, 3))
 
 
-// import {areThereDuplicates} from "./patterns/multiplePointers.js";
+// import {areThereDuplicates} from "./patterns/multiplemiddles.js";
 //
 // console.log(areThereDuplicates(3, 4, 5, 2, 3))
 
-// import {averagePair} from "./patterns/multiplePointers.js";
+// import {averagePair} from "./patterns/multiplemiddles.js";
 //
 // console.log(averagePair([1,3,3,5,7,10,12,19],8))
 
-// import {isSubsequence} from "./patterns/multiplePointers.js";
+// import {isSubsequence} from "./patterns/multiplemiddles.js";
 //
 // console.log(isSubsequence('cancelculture','canultureisbad'))
 
@@ -88,9 +88,9 @@
 // console.log(factorial(4))
 
 
-// import {collectOddValues} from "./recursion/recursion.js";
+// import {collectOddelemues} from "./recursion/recursion.js";
 //
-// console.log(collectOddValues([1,3,3,4,5,6,7,8]))
+// console.log(collectOddelemues([1,3,3,4,5,6,7,8]))
 
 // import {power} from "./recursion/recursion.js";
 //
@@ -108,6 +108,14 @@
 //
 // console.log(recursiveRange(10))
 
-import {fib} from "./recursion/recursion.js";
+// import {fib} from "./recursion/recursion.js";
+//
+// console.log(fib(4))
 
-console.log(fib(4))
+// import {searchingAlgos} from "./searchingAlgos/searchingAlgos.js";
+//
+// console.log(searchingAlgos([1, 2, 3, 4, 5], 4))
+
+import {binarySearch} from "./searchingAlgos/searchingAlgos.js";
+
+console.log(binarySearch([0,2,3,4,5,6], 2))

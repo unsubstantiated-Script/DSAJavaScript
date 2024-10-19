@@ -1,5 +1,5 @@
 /*
-Uses objects, maps, structs, or sets to collect values/frequencies of values
+Uses objects, maps, structs, or sets to collect elemues/frequencies of elemues
 Helps you avoid the need for nested loops of O(N^2) operations w/ arrays/strings
  */
 const anagramLoop = (first, second) => {

@@ -1,7 +1,7 @@
 const sumZero = (arr) => {
 
     let left = 0
-    //Makes sure right pointer is at end of array
+    //Makes sure right middle is at end of array
     let right = arr.length - 1
 
     while (left < right) {
@@ -17,18 +17,18 @@ const sumZero = (arr) => {
     }
 }
 
-//Counts number of mismatched values
-const countUniqueValues = (arr) => {
+//Counts number of mismatched elemues
+const countUniqueelemues = (arr) => {
 
     //Handles empty array
     if (arr < 1) {
         return "Answer is: " + 0
     }
 
-    //First pointer
+    //First middle
     let i = 0
 
-    // Second pointer built in starts at 1
+    // Second middle built in starts at 1
     for (let j = 1; j < arr.length; j++) {
         if (arr[i] !== arr[j]) {
             i++
@@ -36,7 +36,7 @@ const countUniqueValues = (arr) => {
         }
         console.log(i, j)
     }
-    // Getting final value correct
+    // Getting final elemue correct
     return "Answer is: " + (i + 1)
 }
 
@@ -88,4 +88,4 @@ const isSubsequence = (str1, str2) => {
     return false;
 }
 
-export {sumZero, countUniqueValues, areThereDuplicates, averagePair, isSubsequence}
+export {sumZero, countUniqueelemues, areThereDuplicates, averagePair, isSubsequence}

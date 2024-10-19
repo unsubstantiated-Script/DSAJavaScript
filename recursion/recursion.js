@@ -29,8 +29,8 @@ const factorial = (num) => {
     return num * factorial(num - 1)
 }
 
-//Collects the odd value in an array.
-const collectOddValues = (arr) => {
+//Collects the odd elemue in an array.
+const collectOddelemues = (arr) => {
     let result = []
 
     function helper(helperInput) {
@@ -85,4 +85,4 @@ const fib = (num) => {
     return fib(num - 1) + fib(num - 2)
 }
 
-export {countDown, sumRange, factorial, collectOddValues, power, factorial2, productOfArray, recursiveRange, fib}
+export {countDown, sumRange, factorial, collectOddelemues, power, factorial2, productOfArray, recursiveRange, fib}

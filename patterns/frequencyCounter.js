@@ -1,5 +1,5 @@
 /*
-Uses objects, maps, structs, or sets to collect values/frequencies of values
+Uses objects, maps, structs, or sets to collect elemues/frequencies of elemues
 Helps you avoid the need for nested loops of O(N^2) operations w/ arrays/strings
  */
 const frequecyCounter = (arr1, arr2) => {
@@ -8,7 +8,7 @@ const frequecyCounter = (arr1, arr2) => {
     }
 
     // for (let i = 0; i < arr1.length; i++) {
-    //     //Passing in the square of each value
+    //     //Passing in the square of each elemue
     //     let correctIndex = arr2.indexOf(arr1[i] ** 2)
     //
     //     if (correctIndex === -1) {
@@ -23,13 +23,13 @@ const frequecyCounter = (arr1, arr2) => {
     let frequencyCounter2 = {}
 
     //Laying out each of the counts of the objects.
-    //Key is the value at hand and value is the number of incidents of that value.
-    for (let val of arr1) {
-        frequencyCounter1[val] = (frequencyCounter1[val] || 0) + 1
+    //Key is the elemue at hand and elemue is the number of incidents of that elemue.
+    for (let elem of arr1) {
+        frequencyCounter1[elem] = (frequencyCounter1[elem] || 0) + 1
     }
 
-    for (let val of arr2) {
-        frequencyCounter2[val] = (frequencyCounter2[val] || 0) + 1
+    for (let elem of arr2) {
+        frequencyCounter2[elem] = (frequencyCounter2[elem] || 0) + 1
     }
 
     for (let key in frequencyCounter1) {
@@ -59,7 +59,7 @@ const sameFrequency = (int1, int2) => {
     let frequencyCounter2 = {}
 
     //Laying out each of the counts of the objects.
-    //Key is the value at hand and value is the number of incidents of that value.
+    //Key is the elemue at hand and elemue is the number of incidents of that elemue.
     for (let i = 0; i < arr1.length; i++) {
         frequencyCounter1[arr1[i]] = (frequencyCounter1[arr1[i]] || 0) + 1
     }
@@ -79,8 +79,8 @@ const sameFrequency = (int1, int2) => {
 const areThereDuplicates = (...args) => {
     let collection = {}
 
-    for (let val in args) {
-        collection[args[val]] = (collection[args[val]] || 0) + 1
+    for (let elem in args) {
+        collection[args[elem]] = (collection[args[elem]] || 0) + 1
     }
 
     for (let key in collection) {
