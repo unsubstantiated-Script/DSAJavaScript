@@ -1,3 +1,7 @@
+/**
+ * PATTERNS
+ */
+
 // import {frequecyCounter} from "./patterns/patterns.js";
 // import {anagramLoop} from "./patterns/anagramLoop.js";
 
@@ -43,7 +47,6 @@
 // console.log(areThereDuplicates(1, 4, 5, 2, 3))
 
 
-
 // import {areThereDuplicates} from "./patterns/multiplePointers.js";
 //
 // console.log(areThereDuplicates(3, 4, 5, 2, 3))
@@ -64,6 +67,47 @@
 //
 // console.log(minSubArray([3,-2,7,-4,1,-1,4,-2,1],2));
 
-import {findLongestSubstring} from "./patterns/slidingWindow.js";
+// import {findLongestSubstring} from "./patterns/slidingWindow.js";
+//
+// console.log(findLongestSubstring('thisishowwedoit'))
 
-console.log(findLongestSubstring('thisishowwedoit'))
+/**
+ * Recursion
+ */
+
+// import {countDown} from "./recursion/recursion.js";
+//
+// countDown(22)
+
+// import {sumRange} from "./recursion/recursion.js";
+//
+// console.log(sumRange(3))
+
+// import {factorial} from "./recursion/recursion.js";
+//
+// console.log(factorial(4))
+
+
+// import {collectOddValues} from "./recursion/recursion.js";
+//
+// console.log(collectOddValues([1,3,3,4,5,6,7,8]))
+
+// import {power} from "./recursion/recursion.js";
+//
+// console.log(power(2,4))
+
+// import {factorial2} from "./recursion/recursion.js";
+//
+// console.log(factorial2(3))
+
+// import {productOfArray} from "./recursion/recursion.js";
+//
+// console.log(productOfArray([2, 2, 2, 2]))
+
+// import {recursiveRange} from "./recursion/recursion.js";
+//
+// console.log(recursiveRange(10))
+
+import {fib} from "./recursion/recursion.js";
+
+console.log(fib(4))
