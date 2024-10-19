@@ -115,7 +115,11 @@
 // import {searchingAlgos} from "./searchingAlgos/searchingAlgos.js";
 //
 // console.log(searchingAlgos([1, 2, 3, 4, 5], 4))
+//
+// import {binarySearch} from "./searchingAlgos/searchingAlgos.js";
+//
+// console.log(binarySearch([0,2,3,4,5,6], 2))
 
-import {binarySearch} from "./searchingAlgos/searchingAlgos.js";
+import {bubbleSort} from "./sortingAlgos/bubbleSort.js";
 
-console.log(binarySearch([0,2,3,4,5,6], 2))
+console.log(bubbleSort([44,22,34,82,13,55]))
