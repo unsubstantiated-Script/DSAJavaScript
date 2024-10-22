@@ -120,6 +120,15 @@
 //
 // console.log(binarySearch([0,2,3,4,5,6], 2))
 
-import {bubbleSort} from "./sortingAlgos/bubbleSort.js";
+// import {bubbleSort} from "./sortingAlgos/bubbleSort.js";
+//
+// console.log(bubbleSort([44,22,34,82,13,55]))
 
-console.log(bubbleSort([44,22,34,82,13,55]))
+// import {selectionSort} from "./sortingAlgos/selectionSort.js";
+//
+// console.log(selectionSort([22,44,33,89,19,10]))
+
+
+import {insertionSort} from "./sortingAlgos/intertionSort.js";
+
+console.log(insertionSort([22,44,33,89,19,10]))
