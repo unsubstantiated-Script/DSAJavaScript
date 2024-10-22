@@ -127,3 +127,8 @@
 // import {selectionSort} from "./sortingAlgos/selectionSort.js";
 //
 // console.log(selectionSort([22,44,33,89,19,10]))
+
+
+import {insertionSort} from "./sortingAlgos/intertionSort.js";
+
+console.log(insertionSort([22,44,33,89,19,10]))
