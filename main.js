@@ -129,6 +129,24 @@
 // console.log(selectionSort([22,44,33,89,19,10]))
 
 
-import {insertionSort} from "./sortingAlgos/intertionSort.js";
+// import {insertionSort} from "./sortingAlgos/intertionSort.js";
+//
+// console.log(insertionSort([22,44,33,89,19,10]))
 
-console.log(insertionSort([22,44,33,89,19,10]))
+// import {merge} from "./sortingAlgos/mergeSort.js";
+//
+// console.log(merge([1, 3, 4, 5], [2, 6, 7, 8, 9, 10, 11]))
+
+// import {mergeSort} from "./sortingAlgos/mergeSort.js";
+//
+// console.log(mergeSort([33,44,3,22,6,77,88,4]))
+
+
+// import {pivot} from "./sortingAlgos/quickSort.js";
+//
+// console.log(pivot([44,54,32,11,9,3,44]))
+
+
+import {quickSort} from "./sortingAlgos/quickSort.js";
+
+console.log(quickSort([44,54,32,11,9,3,44]))
