@@ -71,6 +71,8 @@
 //
 // console.log(findLongestSubstring('thisishowwedoit'))
 
+
+
 /**
  * Recursion
  */
@@ -155,3 +157,12 @@
 //
 //
 // console.log(radixSort([10, 22, 33, 44444, 5553, 2233333333, 44444]))
+
+import {SinglyLinkedList} from "./dataStructures/singleLinkedList.js";
+
+let list = new SinglyLinkedList()
+
+list.push("yeets")
+list.push("it")
+
+console.log(list)
