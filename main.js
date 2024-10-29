@@ -164,5 +164,12 @@ let list = new SinglyLinkedList()
 
 list.push("yeets")
 list.push("it")
+list.push("!")
 
+// list.traverse()
+console.log(list)
+
+list.pop()
+list.pop()
+list.pop()
 console.log(list)
