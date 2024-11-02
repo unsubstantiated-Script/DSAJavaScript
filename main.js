@@ -195,3 +195,7 @@ console.log(list)
 //Setting items w/ set()
 // console.log(list.set("derp",0))
 // list.traverse()
+
+//Inserting items w/ insert()
+list.insert("Derp", 3)
+list.traverse()
