@@ -184,7 +184,14 @@ console.log(list)
 // console.log(list)
 
 //Adding items to the front w/ unshift
-list.unshift("shall")
-list.unshift("Hal")
-console.log(list)
-list.traverse()
+// list.unshift("shall")
+// list.unshift("Hal")
+// console.log(list)
+// list.traverse()
+
+//Getting items w/ get()
+// console.log(list.get(2))
+
+//Setting items w/ set()
+// console.log(list.set("derp",0))
+// list.traverse()

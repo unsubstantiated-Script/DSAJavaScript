@@ -77,11 +77,36 @@ export class SinglyLinkedList {
         return this;
     }
 
+    get(index) {
+        if (index < 0 || index >= this.length) return null;
+
+        let counter = 0;
+        let current = this.head;
+
+        while (counter !== index) {
+            //Incrementing the position in the array
+            current = current.next
+            counter++;
+        }
+        return current;
+    }
+
+    set(val, index) {
+        let foundNode = this.get(index);
+
+        if (foundNode) {
+            foundNode.val = val;
+            return true;
+        }
+
+        return false;
+    }
+
 
     traverse() {
         //Will loop this till it runs out and returns null;
         let current = this.head;
-        while(current) {
+        while (current) {
             console.log(current.val)
             current = current.next;
         }
