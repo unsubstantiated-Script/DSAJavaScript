@@ -71,6 +71,8 @@
 //
 // console.log(findLongestSubstring('thisishowwedoit'))
 
+
+
 /**
  * Recursion
  */
@@ -150,8 +152,46 @@
 // import {quickSort} from "./sortingAlgos/quickSort.js";
 //
 // console.log(quickSort([44,54,32,11,9,3,44]))
+//
+// import {radixSort} from "./sortingAlgos/radixSort.js";
+//
+//
+// console.log(radixSort([10, 22, 33, 44444, 5553, 2233333333, 44444]))
 
-import {radixSort} from "./sortingAlgos/radixSort.js";
+import {SinglyLinkedList} from "./dataStructures/singleLinkedList.js";
+
+let list = new SinglyLinkedList()
+
+list.push("yeets")
+list.push("it")
+list.push("!")
+
+// list.traverse()
+console.log(list)
 
 
-console.log(radixSort([10, 22, 33, 44444, 5553, 2233333333, 44444]))
+
+// Adding items to the list
+// list.pop()
+// list.pop()
+// list.pop()
+// console.log(list)
+
+// Removing items from the front of the list
+// list.shift()
+// list.shift()
+// list.shift()
+// console.log(list)
+
+//Adding items to the front w/ unshift
+// list.unshift("shall")
+// list.unshift("Hal")
+// console.log(list)
+// list.traverse()
+
+//Getting items w/ get()
+// console.log(list.get(2))
+
+//Setting items w/ set()
+// console.log(list.set("derp",0))
+// list.traverse()
