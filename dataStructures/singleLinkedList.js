@@ -14,6 +14,7 @@ export class SinglyLinkedList {
         this.length = 0;
     }
 
+    // Adds an item to the front of the list
     push(val) {
         let newNode = new Node(val);
 
@@ -34,6 +35,7 @@ export class SinglyLinkedList {
         return this;
     }
 
+    // Removes an item off the end of the list
     pop() {
         if (!this.head) return undefined;
         let current = this.head;
@@ -52,6 +54,7 @@ export class SinglyLinkedList {
         return current;
     }
 
+    // Removes a value from the start of the list
     shift() {
         if (!this.head) return undefined;
         let currentHead = this.head;
@@ -63,6 +66,7 @@ export class SinglyLinkedList {
         return currentHead;
     }
 
+    // Adds a value to the start of the list
     unshift(val) {
         let newNode = new Node(val);
         if (!this.head) {
@@ -77,6 +81,7 @@ export class SinglyLinkedList {
         return this;
     }
 
+    // Gets a value at a position
     get(index) {
         if (index < 0 || index >= this.length) return null;
 
@@ -91,6 +96,7 @@ export class SinglyLinkedList {
         return current;
     }
 
+    //Sets a new value
     set(val, index) {
         let foundNode = this.get(index);
 
@@ -100,6 +106,30 @@ export class SinglyLinkedList {
         }
 
         return false;
+    }
+
+    //Inserts a new node
+    insert(val, index) {
+        if (index < 0 || index > this.length) return false;
+        //Inserts at end
+        if (index === this.length) return !!this.push(val);
+        //inserts at start
+        if (index === 0) return !!this.unshift(val);
+
+        let newNode = new Node(val);
+
+        //Gets the item before the index so we can insert the new val at the index.
+        let prev = this.get(index - 1);
+        let temp = prev.next;
+
+        prev.next = newNode;
+        newNode.next = temp;
+
+
+        this.length++;
+        return true;
+
+
     }
 
 
