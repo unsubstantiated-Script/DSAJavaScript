@@ -52,14 +52,40 @@ export class SinglyLinkedList {
         return current;
     }
 
-    // traverse() {
-    //     //Will loop this till it runs out and returns null;
-    //     let current = this.head;
-    //     while(current) {
-    //         console.log(current.val)
-    //         current = current.next;
-    //     }
-    // }
+    shift() {
+        if (!this.head) return undefined;
+        let currentHead = this.head;
+        this.head = currentHead.next;
+        this.length--;
+        if (this.length === 0) {
+            this.tail = null;
+        }
+        return currentHead;
+    }
+
+    unshift(val) {
+        let newNode = new Node(val);
+        if (!this.head) {
+            this.head = newNode
+            this.tail = this.head
+        } else {
+            //This shouldn't happen if the first condition is true.
+            newNode.next = this.head;
+            this.head = newNode;
+        }
+        this.length++;
+        return this;
+    }
+
+
+    traverse() {
+        //Will loop this till it runs out and returns null;
+        let current = this.head;
+        while(current) {
+            console.log(current.val)
+            current = current.next;
+        }
+    }
 }
 
 

@@ -169,7 +169,22 @@ list.push("!")
 // list.traverse()
 console.log(list)
 
-list.pop()
-list.pop()
-list.pop()
+
+
+// Adding items to the list
+// list.pop()
+// list.pop()
+// list.pop()
+// console.log(list)
+
+// Removing items from the front of the list
+// list.shift()
+// list.shift()
+// list.shift()
+// console.log(list)
+
+//Adding items to the front w/ unshift
+list.unshift("shall")
+list.unshift("Hal")
 console.log(list)
+list.traverse()
