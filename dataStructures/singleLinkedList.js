@@ -132,6 +132,35 @@ export class SinglyLinkedList {
 
     }
 
+    remove(index) {
+        if (index < 0 || index > this.length) return undefined;
+        if (index === this.length - 1) return this.pop();
+        if (index === 0) return this.shift();
+        let prevNode = this.get(index - 1);
+        let removed = prevNode.next;
+
+        prevNode.next = removed.next;
+        this.length--;
+        return removed;
+    }
+
+    reverse() {
+        //Swap head and tail
+        let node = this.head;
+        this.head = this.tail;
+        this.tail = node;
+
+        let next;
+        let prev = null;
+
+        for (let i = 0; i < this.length; i++) {
+            next = node.next;
+            node.next = prev;
+            prev = node;
+            node = next;
+        }
+        return this;
+    }
 
     traverse() {
         //Will loop this till it runs out and returns null;
@@ -140,6 +169,16 @@ export class SinglyLinkedList {
             console.log(current.val)
             current = current.next;
         }
+    }
+
+    print() {
+        let arr = [];
+        let current = this.head;
+        while (current) {
+            arr.push(current.val)
+            current = current.next;
+        }
+        console.log(arr);
     }
 }
 

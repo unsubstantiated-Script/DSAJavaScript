@@ -72,7 +72,6 @@
 // console.log(findLongestSubstring('thisishowwedoit'))
 
 
-
 /**
  * Recursion
  */
@@ -169,8 +168,6 @@ list.push("!")
 // list.traverse()
 console.log(list)
 
-
-
 // Adding items to the list
 // list.pop()
 // list.pop()
@@ -197,5 +194,13 @@ console.log(list)
 // list.traverse()
 
 //Inserting items w/ insert()
-list.insert("Derp", 3)
-list.traverse()
+// list.insert("Derp", 3)
+// list.traverse()
+
+//Removing jazz w/ remove()
+// console.log(list.remove(2))
+// list.traverse()
+
+//Reversing the list
+list.reverse()
+list.print()
