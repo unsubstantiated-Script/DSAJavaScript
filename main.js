@@ -157,16 +157,20 @@
 //
 // console.log(radixSort([10, 22, 33, 44444, 5553, 2233333333, 44444]))
 
-import {SinglyLinkedList} from "./dataStructures/singleLinkedList.js";
+/**
+ * Singly Linked List
+ */
 
-let list = new SinglyLinkedList()
-
-list.push("yeets")
-list.push("it")
-list.push("!")
-
-// list.traverse()
-console.log(list)
+// import {SinglyLinkedList} from "./dataStructures/singleLinkedList.js";
+//
+// let list = new SinglyLinkedList()
+//
+// list.push("yeets")
+// list.push("it")
+// list.push("!")
+//
+// // list.traverse()
+// console.log(list)
 
 // Adding items to the list
 // list.pop()
@@ -202,5 +206,28 @@ console.log(list)
 // list.traverse()
 
 //Reversing the list
-list.reverse()
-list.print()
+// list.reverse()
+// list.print()
+
+
+/**
+ * Doubly Linked List
+ */
+
+import {DoublyLinkedList} from "./dataStructures/doubleLinkedList.js";
+
+let list = new DoublyLinkedList()
+
+list.push("Derp")
+list.push("yeets")
+list.push("it")
+list.push("!")
+console.log(list)
+
+// list.pop()
+// list.shift()
+//list.unshift('Kakkaka')
+// list.set(1, "Herk")
+// console.log(list.insert(2, "Yerp"))
+console.log("This was removed!", list.remove(1))
+console.log(list)
