@@ -214,20 +214,32 @@
  * Doubly Linked List
  */
 
-import {DoublyLinkedList} from "./dataStructures/doubleLinkedList.js";
+// import {DoublyLinkedList} from "./dataStructures/doubleLinkedList.js";
+//
+// let list = new DoublyLinkedList()
+//
+// list.push("Derp")
+// list.push("yeets")
+// list.push("it")
+// list.push("!")
+// console.log(list)
+//
+// // list.pop()
+// // list.shift()
+// //list.unshift('Kakkaka')
+// // list.set(1, "Herk")
+// // console.log(list.insert(2, "Yerp"))
+// console.log("This was removed!", list.remove(1))
+// console.log(list)
 
-let list = new DoublyLinkedList()
-
-list.push("Derp")
-list.push("yeets")
-list.push("it")
-list.push("!")
-console.log(list)
-
-// list.pop()
-// list.shift()
-//list.unshift('Kakkaka')
-// list.set(1, "Herk")
-// console.log(list.insert(2, "Yerp"))
-console.log("This was removed!", list.remove(1))
-console.log(list)
+// import {Stack} from "./dataStructures/stacks.js";
+//
+// /**
+//  * Stacks
+//  */
+// let stack = new Stack()
+// stack.push(3)
+// stack.push("howdy")
+// stack.push("beans")
+// stack.pop()
+// console.log(stack)
