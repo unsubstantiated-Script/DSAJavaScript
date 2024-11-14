@@ -214,20 +214,45 @@
  * Doubly Linked List
  */
 
-import {DoublyLinkedList} from "./dataStructures/doubleLinkedList.js";
+// import {DoublyLinkedList} from "./dataStructures/doubleLinkedList.js";
+//
+// let list = new DoublyLinkedList()
+//
+// list.push("Derp")
+// list.push("yeets")
+// list.push("it")
+// list.push("!")
+// console.log(list)
+//
+// // list.pop()
+// // list.shift()
+// //list.unshift('Kakkaka')
+// // list.set(1, "Herk")
+// // console.log(list.insert(2, "Yerp"))
+// console.log("This was removed!", list.remove(1))
+// console.log(list)
 
-let list = new DoublyLinkedList()
+// import {Stack} from "./dataStructures/stacks.js";
+//
+// /**
+//  * Stacks
+//  */
+// let stack = new Stack()
+// stack.push(3)
+// stack.push("howdy")
+// stack.push("beans")
+// stack.pop()
+// console.log(stack)
 
-list.push("Derp")
-list.push("yeets")
-list.push("it")
-list.push("!")
-console.log(list)
+import {Queue} from "./dataStructures/queues.js";
 
-// list.pop()
-// list.shift()
-//list.unshift('Kakkaka')
-// list.set(1, "Herk")
-// console.log(list.insert(2, "Yerp"))
-console.log("This was removed!", list.remove(1))
-console.log(list)
+/**
+ * Queues
+ */
+
+let queue = new Queue()
+queue.enqueue(33)
+queue.enqueue(22)
+queue.enqueue(11)
+queue.deqeueue()
+console.log(queue)
