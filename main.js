@@ -243,3 +243,16 @@
 // stack.push("beans")
 // stack.pop()
 // console.log(stack)
+
+import {Queue} from "./dataStructures/queues.js";
+
+/**
+ * Queues
+ */
+
+let queue = new Queue()
+queue.enqueue(33)
+queue.enqueue(22)
+queue.enqueue(11)
+queue.deqeueue()
+console.log(queue)
