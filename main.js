@@ -244,15 +244,30 @@
 // stack.pop()
 // console.log(stack)
 
-import {Queue} from "./dataStructures/queues.js";
+// import {Queue} from "./dataStructures/queues.js";
+//
+// /**
+//  * Queues
+//  */
+//
+// let queue = new Queue()
+// queue.enqueue(33)
+// queue.enqueue(22)
+// queue.enqueue(11)
+// queue.deqeueue()
+// console.log(queue)
+
+import {BinarySearchTree} from "./dataStructures/binarySearchTrees.js";
 
 /**
- * Queues
+ * Binary Search Trees
  */
 
-let queue = new Queue()
-queue.enqueue(33)
-queue.enqueue(22)
-queue.enqueue(11)
-queue.deqeueue()
-console.log(queue)
+let tree = new BinarySearchTree()
+
+tree.insert(10)
+tree.insert(2002)
+tree.insert(4)
+tree.insert(1)
+tree.insert(55)
+console.log(tree)
