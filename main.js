@@ -257,23 +257,38 @@
 // queue.deqeueue()
 // console.log(queue)
 
-import {BinarySearchTree} from "./dataStructures/binarySearchTrees.js";
+// import {BinarySearchTree} from "./dataStructures/binarySearchTrees.js";
 
 /**
  * Binary Search Trees
  */
 
-let tree = new BinarySearchTree()
+// let tree = new BinarySearchTree()
+//
+// tree.insert(10)
+// tree.insert(6)
+// tree.insert(15)
+// tree.insert(3)
+// tree.insert(8)
+// tree.insert(20)
+// // console.log(tree)
+// // console.log(tree.find(11))
+// // console.log(tree.breadthFirstSearch())
+// console.log(tree.depthFirstSearchPreOrder())
+// console.log(tree.depthFirstSearchPostOrder())
+// console.log(tree.depthFirstSearchInOrder())
 
-tree.insert(10)
-tree.insert(6)
-tree.insert(15)
-tree.insert(3)
-tree.insert(8)
-tree.insert(20)
-// console.log(tree)
-// console.log(tree.find(11))
-// console.log(tree.breadthFirstSearch())
-console.log(tree.depthFirstSearchPreOrder())
-console.log(tree.depthFirstSearchPostOrder())
-console.log(tree.depthFirstSearchInOrder())
+import {MaxBinaryHeap} from "./dataStructures/binaryHeaps.js";
+
+/**
+ * Binary Heaps
+ */
+let heap = new MaxBinaryHeap()
+heap.insert(55);
+heap.insert(333);
+heap.insert(4);
+heap.insert(55);
+heap.insert(1);
+
+
+console.log(heap)
