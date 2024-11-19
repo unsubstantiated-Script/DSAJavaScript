@@ -278,17 +278,37 @@
 // console.log(tree.depthFirstSearchPostOrder())
 // console.log(tree.depthFirstSearchInOrder())
 
-import {MaxBinaryHeap} from "./dataStructures/binaryHeaps.js";
+//import {MaxBinaryHeap} from "./dataStructures/binaryHeaps.js";
 
 /**
  * Binary Heaps
  */
-let heap = new MaxBinaryHeap()
-heap.insert(55);
-heap.insert(333);
-heap.insert(4);
-heap.insert(55);
-heap.insert(1);
+// let heap = new MaxBinaryHeap();
+//
+// heap.insert(41);
+// heap.insert(39);
+// heap.insert(33);
+// heap.insert(18);
+// heap.insert(27);
+// heap.insert(12);
+// heap.insert(55);
+// console.log(heap);
+//
+// console.log(heap.extractMax());
+// console.log(heap);
 
+// import {PriorityQueue} from "./dataStructures/priorityQueue.js";
+//
+// /**
+//  * Priority Queue
+//  */
+//
+// let ER = new PriorityQueue();
+//
+// ER.enqueue("common cold", 4);
+// ER.enqueue("gunshot wound", 1);
+// ER.enqueue("high fever", 2);
+//
+// console.log(ER)
+// console.log(ER.dequeue())
 
-console.log(heap)
