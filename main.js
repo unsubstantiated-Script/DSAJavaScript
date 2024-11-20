@@ -312,3 +312,21 @@
 // console.log(ER)
 // console.log(ER.dequeue())
 
+import {HashTable} from "./dataStructures/hashTable.js";
+
+/**
+ * Hash Tables
+ */
+
+let ht = new HashTable();
+
+ht.set("red", "#FF0000");
+ht.set("green", "#00ff00");
+ht.set("blue", "#0000FF");
+ht.set("olive", "#808000");
+ht.set("potato", "#B79268");
+
+console.log(ht.get("olive"))
+
+console.log(ht.keys())
+console.log(ht.values())
