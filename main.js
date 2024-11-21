@@ -312,21 +312,41 @@
 // console.log(ER)
 // console.log(ER.dequeue())
 
-import {HashTable} from "./dataStructures/hashTable.js";
+// import {HashTable} from "./dataStructures/hashTable.js";
+//
+// /**
+//  * Hash Tables
+//  */
+//
+// let ht = new HashTable();
+//
+// ht.set("red", "#FF0000");
+// ht.set("green", "#00ff00");
+// ht.set("blue", "#0000FF");
+// ht.set("olive", "#808000");
+// ht.set("potato", "#B79268");
+//
+// console.log(ht.get("olive"))
+//
+// console.log(ht.keys())
+// console.log(ht.values())
+
+import {Graph} from "./dataStructures/graphs.js";
 
 /**
- * Hash Tables
+ * Graphs
  */
 
-let ht = new HashTable();
+let graph = new Graph();
+graph.addVertex("Tokyo")
+graph.addVertex("Hong Kong")
+graph.addVertex("Dubai")
 
-ht.set("red", "#FF0000");
-ht.set("green", "#00ff00");
-ht.set("blue", "#0000FF");
-ht.set("olive", "#808000");
-ht.set("potato", "#B79268");
+graph.addEdge("Tokyo", "Dubai")
+graph.addEdge("Hong Kong", "Dubai")
+graph.addEdge("Hong Kong", "Tokyo")
+console.log(graph)
 
-console.log(ht.get("olive"))
-
-console.log(ht.keys())
-console.log(ht.values())
+// graph.removeEdge("Hong Kong", "Tokyo")
+graph.removeVertex("Hong Kong")
+console.log(graph)
