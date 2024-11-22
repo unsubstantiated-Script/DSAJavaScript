@@ -338,15 +338,27 @@ import {Graph} from "./dataStructures/graphs.js";
  */
 
 let graph = new Graph();
-graph.addVertex("Tokyo")
-graph.addVertex("Hong Kong")
-graph.addVertex("Dubai")
+graph.addVertex("A")
+graph.addVertex("B")
+graph.addVertex("C")
+graph.addVertex("D")
+graph.addVertex("E")
+graph.addVertex("F")
 
-graph.addEdge("Tokyo", "Dubai")
-graph.addEdge("Hong Kong", "Dubai")
-graph.addEdge("Hong Kong", "Tokyo")
-console.log(graph)
+graph.addEdge("A", "B")
+graph.addEdge("A", "C")
+graph.addEdge("B", "D")
+graph.addEdge("C", "E")
+graph.addEdge("D", "E")
+graph.addEdge("D", "F")
+graph.addEdge("E", "F")
+//console.log(graph)
+
+// console.log(graph.depthFirstRecursive("A"))
+
+// console.log(graph.depthFirstIterative("A"))
+console.log(graph.breadthFirst("A"))
 
 // graph.removeEdge("Hong Kong", "Tokyo")
-graph.removeVertex("Hong Kong")
-console.log(graph)
+// graph.removeVertex("Hong Kong")
+// console.log(graph)
