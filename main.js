@@ -352,9 +352,12 @@ graph.addEdge("C", "E")
 graph.addEdge("D", "E")
 graph.addEdge("D", "F")
 graph.addEdge("E", "F")
-console.log(graph)
+//console.log(graph)
 
-console.log(graph.depthFirstRecursive("A"))
+// console.log(graph.depthFirstRecursive("A"))
+
+// console.log(graph.depthFirstIterative("A"))
+console.log(graph.breadthFirst("A"))
 
 // graph.removeEdge("Hong Kong", "Tokyo")
 // graph.removeVertex("Hong Kong")
