@@ -22,11 +22,30 @@ class Graph {
     }
 
     removeVertex(vert) {
-        while(this.adjacencyList[vert].length) {
+        while (this.adjacencyList[vert].length) {
             const adjacentVertex = this.adjacencyList[vert].pop()
             this.removeEdge(vert, adjacentVertex)
         }
         delete this.adjacencyList[vert]
+    }
+
+    depthFirstRecursive(start) {
+        const result = [];
+        const visited = {};
+        const adjacencyList = this.adjacencyList;
+
+        (function dfs(vertex) {
+            if (!vertex) return null;
+            visited[vertex] = true;
+            result.push(vertex);
+            adjacencyList[vertex].forEach(neighbor => {
+                if (!visited[neighbor]) {
+                    return dfs(neighbor)
+                }
+            })
+        })(start);
+
+        return result;
     }
 }
 
