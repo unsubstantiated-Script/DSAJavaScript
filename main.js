@@ -280,7 +280,7 @@
 
 //import {MaxBinaryHeap} from "./dataStructures/binaryHeaps.js";
 
-import {WeightedGraph} from "./dataStructures/dijkstra.js";
+//import {WeightedGraph} from "./dataStructures/dijkstra.js";
 
 /**
  * Binary Heaps
@@ -365,22 +365,22 @@ import {WeightedGraph} from "./dataStructures/dijkstra.js";
 // graph.removeVertex("Hong Kong")
 // console.log(graph)
 
-let graphWeighted = new WeightedGraph();
-graphWeighted.addVertex("A")
-graphWeighted.addVertex("B")
-graphWeighted.addVertex("C")
-graphWeighted.addVertex("D")
-graphWeighted.addVertex("E")
-graphWeighted.addVertex("F")
-
-graphWeighted.addEdge("A", "B", 4)
-graphWeighted.addEdge("A", "C", 2)
-graphWeighted.addEdge("B", "E", 3)
-graphWeighted.addEdge("C", "D", 2)
-graphWeighted.addEdge("C", "F", 4)
-graphWeighted.addEdge("D", "E", 3)
-graphWeighted.addEdge("D", "F", 1)
-graphWeighted.addEdge("E", "F", 1)
-//console.log(graphWeighted.adjacencyList)
-
-console.log(graphWeighted.Dijkstra("A", "E"));
+// let graphWeighted = new WeightedGraph();
+// graphWeighted.addVertex("A")
+// graphWeighted.addVertex("B")
+// graphWeighted.addVertex("C")
+// graphWeighted.addVertex("D")
+// graphWeighted.addVertex("E")
+// graphWeighted.addVertex("F")
+//
+// graphWeighted.addEdge("A", "B", 4)
+// graphWeighted.addEdge("A", "C", 2)
+// graphWeighted.addEdge("B", "E", 3)
+// graphWeighted.addEdge("C", "D", 2)
+// graphWeighted.addEdge("C", "F", 4)
+// graphWeighted.addEdge("D", "E", 3)
+// graphWeighted.addEdge("D", "F", 1)
+// graphWeighted.addEdge("E", "F", 1)
+// //console.log(graphWeighted.adjacencyList)
+//
+// console.log(graphWeighted.Dijkstra("A", "E"));
